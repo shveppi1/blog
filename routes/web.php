@@ -36,3 +36,7 @@ Route::get('/email', function() {
 
 Route::post('/ajax/formyoo', 'MainController@createKey');
 Route::post('/yoo/pay/info', 'MainController@payTrans');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
