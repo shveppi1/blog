@@ -18,6 +18,12 @@ Route::get('/', function () {
 });
 */
 
+
+
+
+Route::get('/', 'MainController@index');
+
+/*
 Route::get('/', 'MainController@index');
 Route::get('/thanks', 'MainController@thanks');
 Route::get('/test', 'MainController@test');
@@ -36,3 +42,5 @@ Route::get('/email', function() {
 
 Route::post('/ajax/formyoo', 'MainController@createKey');
 Route::post('/yoo/pay/info', 'MainController@payTrans');
+
+*/
